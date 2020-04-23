@@ -10,6 +10,10 @@ export default async function (options, args) {
 
   console.log('Pulling AdonisX project...'.yellow)
   await shell.exec(`git clone git@github.com:adonisx/adonisx-example.git ${customName}`)
+
+  console.log('Creating .env file')
+  await shell.exec(`mv ${customName}/.env.example ${customName}/.env`)
+
   console.log(`The project has been created!`.green)
   console.log(`
 Usage:
