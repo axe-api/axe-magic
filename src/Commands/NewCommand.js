@@ -1,4 +1,4 @@
-import executer from './../Core/Executer'
+import shell from 'shelljs'
 import colors from 'colors'
 
 export default async function (options, args) {
@@ -9,7 +9,7 @@ export default async function (options, args) {
   }
 
   console.log('Pulling AdonisX project...'.yellow)
-  await executer(`git clone git@github.com:adonisx/adonisx-example.git ${customName}`)
+  await shell.exec(`git clone git@github.com:adonisx/adonisx-example.git ${customName}`)
   console.log(`The project has been created!`.green)
   console.log(`
 Usage:
