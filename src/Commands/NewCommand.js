@@ -4,6 +4,7 @@ import colors from 'colors'
 export default async function (options, args) {
   let customName = 'adonisx-example'
   let errors = null
+  const fs = require('fs'); 
 
   if (args[3]) {
     customName = args[3]
@@ -20,7 +21,14 @@ export default async function (options, args) {
   }
 
   console.log('Creating .env file')
-  await shell.exec(`mv ${customName}/.env.example ${customName}/.env`)
+  
+  fs.rename(`${customName}/.env.example`, `${customName}/.env`, (err) => {
+    if (err) {
+      console.log(err.message);
+      console.log("Some errors have occured!".red);
+      shell.exit(0);
+    }
+  })
 
   console.log(`The project has been created!`.green)
   console.log(`
