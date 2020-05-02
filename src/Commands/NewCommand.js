@@ -22,14 +22,7 @@ export default async function (options, args) {
 
   console.log('Creating .env file')
   
-  fs.rename(`${customName}/.env.example`, `${customName}/.env`, (err) => {
-    if (err) {
-      console.log(err.message);
-      console.log("Some errors have occured!".red);
-      shell.exit(0);
-    }
-  })
-
+  await fs.renameSync(`${customName}/.env.example`, `${customName}/.env`)
   console.log(`The project has been created!`.green)
   console.log(`
 Usage:
