@@ -1,12 +1,12 @@
 export default function () {
   console.log(`
 Usage:
-  adonisx [command] [options]
+  axe-cli [command] [options]
 
 Commands:
-  new           Creates a new AdonisX project
+  new           Creates a new Axe API project
 
 Options:
   --version
-`)
+`);
 }

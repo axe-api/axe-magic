@@ -1,12 +1,12 @@
-# AdonisX CLI
+# Axe API CLI
 
-This is a simple cli tool to manage AdonisX projects easily.
+This is a simple cli tool to manage Axe API projects easily.
 
 ## Usage
 
 ```
-$ npm install -g adonisx-cli
-$ adonisx --version
+$ npm install -g axe-cli
+$ axe-cli --version
 ```
 
 ## Commands
@@ -14,7 +14,7 @@ $ adonisx --version
 To create a new project, you may use following command;
 
 ```
-$ adonisx new my-api
+$ axe-cli new my-api
 ```
 
 ## License

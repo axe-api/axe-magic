@@ -1,11 +1,10 @@
 {
-  "name": "adonisx-cli",
-  "version": "1.0.3",
+  "name": "axe-cli",
+  "version": "1.0.0",
   "description": "",
   "main": "src/cli.js",
   "bin": {
-    "adonisx-cli": "bin/adonisx",
-    "adonisx": "bin/adonisx"
+    "axe-cli": "bin/axe-cli"
   },
   "publishConfig": {
     "access": "public"
@@ -14,15 +13,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "adonisx",
+    "axe-api",
     "cli"
   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "arg": "^4.1.3",
+    "arg": "^5.0.0",
     "colors": "^1.4.0",
     "esm": "^3.2.25",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.4"
   }
 }
