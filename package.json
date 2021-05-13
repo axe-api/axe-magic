@@ -1,6 +1,6 @@
 {
   "name": "axe-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "src/cli.js",
   "bin": {
@@ -22,6 +22,7 @@
     "arg": "^5.0.0",
     "colors": "^1.4.0",
     "esm": "^3.2.25",
+    "rimraf": "^3.0.2",
     "shelljs": "^0.8.4"
   }
 }

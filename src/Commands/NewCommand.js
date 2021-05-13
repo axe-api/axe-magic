@@ -1,5 +1,6 @@
 import shell from "shelljs";
 import colors from "colors";
+import rimraf from "rimraf";
 
 export default async function (options, args) {
   let customName = "axe-api";
@@ -25,11 +26,12 @@ export default async function (options, args) {
   console.log("Creating .env file");
 
   await fs.renameSync(`${customName}/.env.example`, `${customName}/.env`);
+  await rimraf.sync(`${customName}/.git`);
   console.log(`The project has been created!`.green);
   console.log(`
 Usage:
 
   $ cd ${customName}
-  $ npm & npm run serve
+  $ npm install & npm run start:dev
 `);
 }
