@@ -1,3 +1,3 @@
 export default function () {
-  console.log("1.0.1");
+  console.log("1.0.2");
 }

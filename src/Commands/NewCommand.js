@@ -3,7 +3,7 @@ import "colors";
 import rimraf from "rimraf";
 
 export default async function (options, args) {
-  let customName = "axe-magic";
+  let customName = "axe-magic-api";
   let errors = null;
   const fs = require("fs");
 
