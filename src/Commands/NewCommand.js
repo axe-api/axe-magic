@@ -1,9 +1,9 @@
 import shell from "shelljs";
-import colors from "colors";
+import "colors";
 import rimraf from "rimraf";
 
 export default async function (options, args) {
-  let customName = "axe-api";
+  let customName = "axe-magic";
   let errors = null;
   const fs = require("fs");
 

@@ -1,7 +1,7 @@
 export default function () {
   console.log(`
 Usage:
-  axe-cli [command] [options]
+  axe-magic [command] [options]
 
 Commands:
   new           Creates a new Axe API project

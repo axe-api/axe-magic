@@ -1,10 +1,10 @@
 {
-  "name": "axe-cli",
+  "name": "axe-magic",
   "version": "1.0.1",
   "description": "",
   "main": "src/cli.js",
   "bin": {
-    "axe-cli": "bin/axe-cli"
+    "axe-magic": "bin/axe-magic"
   },
   "publishConfig": {
     "access": "public"
