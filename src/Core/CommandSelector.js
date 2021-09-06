@@ -4,7 +4,8 @@ import UsageCommand from './../Commands/UsageCommand'
 
 const map = {
   version: VersionCommand,
-  new: NewCommand
+  new: NewCommand,
+  help: UsageCommand,
 }
 
 export default function (options) {
@@ -21,6 +22,7 @@ export default function (options) {
   }
 
   if (action === null) {
+    options.template && console.log(`axe-magic: '${options.template}' is not a axe-magic command.`);
     return UsageCommand
   }
 

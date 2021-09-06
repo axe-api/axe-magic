@@ -8,5 +8,6 @@ Commands:
 
 Options:
   --version
+  --help
 `);
 }
