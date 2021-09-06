@@ -4,7 +4,9 @@ export default function (rawArgs) {
   const args = arg(
     {
       '--version': Boolean,
-      '-v': '--version'
+      '-v': '--version',
+      '--help': Boolean,
+      '-h': '--help',
     },
     {
       argv: rawArgs.slice(2)
@@ -12,6 +14,7 @@ export default function (rawArgs) {
   )
   return {
     version: args['--version'] || false,
+    help: args['--help'] || false,
     template: args._[0]
   }
 }
