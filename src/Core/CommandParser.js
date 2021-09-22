@@ -7,6 +7,16 @@ export default function (rawArgs) {
       '-v': '--version',
       '--help': Boolean,
       '-h': '--help',
+      // Generate model options.
+      '--table': Boolean,
+      '--primaryKey': Boolean,
+      '--fillable': Boolean,
+      '--serialize': Boolean,
+      '--validations': Boolean,
+      '--hiddens': Boolean,
+      '--handlers': Boolean,
+      '--middlewares': Boolean,
+      '--ignore': Boolean,
     },
     {
       argv: rawArgs.slice(2)

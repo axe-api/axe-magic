@@ -1,11 +1,13 @@
 import VersionCommand from './../Commands/VersionCommand'
 import NewCommand from './../Commands/NewCommand'
 import UsageCommand from './../Commands/UsageCommand'
+import GenerateModel from './../Commands/GenarateModel'
 
 const map = {
   version: VersionCommand,
   new: NewCommand,
   help: UsageCommand,
+  "generate:model": GenerateModel,
 }
 
 export default function (options) {
