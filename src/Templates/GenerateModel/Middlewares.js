@@ -1,0 +1,1 @@
+export default "  get middlewares() {\n    return [\n      (req, res, next) => {\n        // Check anything you want here.\n        next();\n      },\n    ];\n  }";

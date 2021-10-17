@@ -1,0 +1,1 @@
+export default "  serialize(items) {\n    // Change key name or add virtual fields.  \n    // return {\n    //   ...item,\n    //   fullname: `${item.name} ${item.surname}`,\n    // };\n    return {\n      ...items,\n    };\n  }";

@@ -1,0 +1,1 @@
+export default "  get fillable() {\n    // Set fillable fields\n    // return [\"email\", \"name\", \"surname\", \"age\"];\n    return [];\n  }";

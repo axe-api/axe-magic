@@ -1,0 +1,1 @@
+export default "  get ignore() {\n    // In case you don't want to create routes for a model, Axe API provides ignore getter.\n    return true;\n  }";

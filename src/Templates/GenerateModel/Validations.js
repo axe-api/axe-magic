@@ -1,0 +1,1 @@
+export default "  get validations() {\n   /* Set valiation rules using \"validator.js\" \n    return {\n      email: \"required|email\",\n      name: \"required|max:50\",\n      age: \"max:100\",\n    };*/\n    return {};\n  }";
