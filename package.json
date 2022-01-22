@@ -1,6 +1,6 @@
 {
   "name": "axe-magic",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "src/cli.js",
   "bin": {
@@ -23,6 +23,6 @@
     "colors": "^1.4.0",
     "esm": "^3.2.25",
     "rimraf": "^3.0.2",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.5"
   }
 }
