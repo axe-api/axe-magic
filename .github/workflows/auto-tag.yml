@@ -3,7 +3,7 @@ name: Tag and Push
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   tag-and-push:
