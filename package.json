@@ -23,6 +23,9 @@
     "email": "i.ozguradem@gmail.com",
     "url": "https://ozgur.works"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
