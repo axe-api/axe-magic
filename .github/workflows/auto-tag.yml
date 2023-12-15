@@ -27,8 +27,8 @@ jobs:
 
       - name: Tag and push to GitHub
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "i.ozguradem@gmail.com"
+          git config --local user.name "Özgür Adem Işıklı"
           git tag -a "v${{ steps.version.outputs.version }}" -m "Version ${{ steps.version.outputs.version }}"
           git push origin "v${{ steps.version.outputs.version }}"
 
