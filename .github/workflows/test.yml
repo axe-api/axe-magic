@@ -11,4 +11,5 @@ jobs:
         with:
           node-version: 20
       - run: npm install
+      - run: git config --global user.email "i.ozguradem@gmail.com" && git config --global user.name "Özgür Adem Işıklı"
       - run: node src/test.js new axe-magic-api
