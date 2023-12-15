@@ -1,13 +1,15 @@
-import parser from './Core/CommandParser'
-import selector from './Core/CommandSelector'
+const { Command } = require("commander");
+const program = new Command();
+const newCommand = require("./Commands/NewCommand");
 
-export async function cli(args) {
-  let options = null;
-  try {
-    options = parser(args)
-  } catch (error) { // Handle option parsing error then select UsageCommand
-    options = { help: true, template: undefined }
-    console.log(`error: unknown option '${args.splice(2).join(' ')}'`)
-  }
-  selector(options)(options, args)
-}
+program.name("axe-magic").description("AXE API CLI tool").version("2.0.0");
+
+program
+  .command("new")
+  .description("Create a new Axe API project.")
+  .argument("<project-name>", "The name of the project")
+  .action(newCommand);
+
+module.exports = {
+  cli: () => program.parse(),
+};

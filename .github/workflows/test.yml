@@ -1,0 +1,14 @@
+name: Test
+
+on: push
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 20
+      - run: npm install
+      - run: node src/test.js new axe-magic-api

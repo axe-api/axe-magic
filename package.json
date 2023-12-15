@@ -1,7 +1,7 @@
 {
   "name": "axe-magic",
-  "version": "1.0.5",
-  "description": "",
+  "description": "AXE API CLI tool.",
+  "version": "1.0.6",
   "main": "src/cli.js",
   "bin": {
     "axe-magic": "bin/axe-magic"
@@ -14,15 +14,20 @@
   },
   "keywords": [
     "axe-api",
-    "cli"
+    "cli",
+    "rest-api",
+    "api"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Özgür Adem Işıklı",
+    "email": "i.ozguradem@gmail.com",
+    "url": "https://ozgur.works"
+  },
+  "license": "MIT",
   "dependencies": {
-    "arg": "^5.0.1",
     "colors": "^1.4.0",
-    "esm": "^3.2.25",
-    "rimraf": "^3.0.2",
+    "commander": "^11.1.0",
+    "rimraf": "^5.0.5",
     "shelljs": "^0.8.5"
   }
 }
