@@ -9,7 +9,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: butlerlogic/action-autotag@stable
-        with:
-          GITHUB_TOKEN: "${{ secrets.AUTO_TAG_TOKEN }}"
+      - run: version=$(jq -r .version package.json) && git tag -a "v$version" -m "Version $version"
