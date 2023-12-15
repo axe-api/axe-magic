@@ -9,4 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 20
       - run: version=$(jq -r .version package.json) && git tag -a "v$version" -m "Version $version"
