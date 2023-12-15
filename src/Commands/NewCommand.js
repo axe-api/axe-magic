@@ -1,20 +1,16 @@
-import shell from "shelljs";
-import "colors";
-import rimraf from "rimraf";
+const shell = require("shelljs");
+const rimraf = require("rimraf");
+const fs = require("fs");
+require("colors");
 
-export default async function (options, args) {
-  let customName = "axe-magic-api";
+module.exports = async function (name, options) {
   let errors = null;
-  const fs = require("fs");
 
-  if (args[3]) {
-    customName = args[3];
-    console.log(`Directory name would be: ${customName}`.green);
-  }
+  console.log(`Directory name would be: ${name}`.green);
 
   console.log("Pulling example Axe API project...".yellow);
   await shell.exec(
-    `git clone https://github.com/axe-api/axe-api-template.git ${customName}`
+    `git clone https://github.com/axe-api/axe-api-template.git ${name}`
   );
 
   errors = shell.error();
@@ -25,13 +21,13 @@ export default async function (options, args) {
 
   console.log("Creating .env file");
 
-  await fs.renameSync(`${customName}/.env.example`, `${customName}/.env`);
-  await rimraf.sync(`${customName}/.git`);
+  await fs.renameSync(`${name}/.env.example`, `${name}/.env`);
+  await rimraf.sync(`${name}/.git`);
   console.log(`The project has been created!`.green);
   console.log(`
-Usage:
+  Usage:
 
-  $ cd ${customName}
-  $ npm install & npm run start:dev
-`);
-}
+    $ cd ${name}
+    $ npm install & npm run start:dev
+  `);
+};
