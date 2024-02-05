@@ -29,7 +29,7 @@
   "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
-    "commander": "^11.1.0",
+    "commander": "^12.0.0",
     "rimraf": "^5.0.5",
     "shelljs": "^0.8.5"
   }
