@@ -1,7 +1,7 @@
 {
   "name": "axe-magic",
   "description": "AXE API CLI tool.",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "src/cli.js",
   "bin": {
     "axe-magic": "bin/axe-magic"
